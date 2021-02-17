@@ -81,3 +81,7 @@ AND name NOT LIKE '% %'
 SELECT name
   FROM world
  WHERE name LIKE 'U%'
+
+SELECT population
+  FROM world
+ WHERE name = 'United Kingdom'
