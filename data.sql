@@ -89,3 +89,7 @@ SELECT population
 SELECT continent 
    FROM world 
   WHERE name = 'France'
+
+SELECT name, population / 10 
+  FROM world 
+ WHERE population < 10000
