@@ -18,3 +18,7 @@ SELECT name, population
 
 SELECT name FROM world
  WHERE name LIKE '%a' OR name LIKE '%l'
+
+SELECT name,length(name)
+FROM world
+WHERE length(name)=5 and continent='Europe'
