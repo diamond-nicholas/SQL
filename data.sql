@@ -97,3 +97,6 @@ SELECT name, population / 10
 SELECT name, population
   FROM world
  WHERE continent IN ('Europe', 'Asia')
+
+SELECT name FROM world
+ WHERE name IN ('Cuba', 'Togo')
