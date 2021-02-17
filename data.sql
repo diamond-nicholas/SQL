@@ -100,3 +100,7 @@ SELECT name, population
 
 SELECT name FROM world
  WHERE name IN ('Cuba', 'Togo')
+
+SELECT name FROM world
+ WHERE continent = 'South America'
+   AND population > 40000000
