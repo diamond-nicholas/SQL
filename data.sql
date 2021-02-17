@@ -85,3 +85,7 @@ SELECT name
 SELECT population
   FROM world
  WHERE name = 'United Kingdom'
+
+SELECT continent 
+   FROM world 
+  WHERE name = 'France'
