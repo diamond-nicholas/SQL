@@ -159,3 +159,7 @@ SELECT winner, subject
 
 SELECT winner FROM nobel
  WHERE winner LIKE 'C%' AND winner LIKE '%n'
+
+SELECT COUNT(subject) FROM nobel
+ WHERE subject = 'Chemistry'
+   AND yr BETWEEN 1950 and 1960
