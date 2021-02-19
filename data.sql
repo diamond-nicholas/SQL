@@ -173,3 +173,11 @@ SELECT yr FROM nobel
  WHERE yr NOT IN(SELECT yr 
                    FROM nobel
                  WHERE subject IN ('Chemistry','Physics'))
+
+SELECT DISTINCT yr
+  FROM nobel
+ WHERE subject='Medicine' 
+   AND yr NOT IN(SELECT yr FROM nobel 
+                  WHERE subject='Literature')
+   AND yr NOT IN (SELECT yr FROM nobel
+                   WHERE subject='Peace')
