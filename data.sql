@@ -181,3 +181,8 @@ SELECT DISTINCT yr
                   WHERE subject='Literature')
    AND yr NOT IN (SELECT yr FROM nobel
                    WHERE subject='Peace')
+
+ SELECT subject, COUNT(subject) 
+   FROM nobel 
+  WHERE yr ='1960' 
+  GROUP BY subject
